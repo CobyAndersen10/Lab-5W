@@ -7,7 +7,8 @@ public static void main string(String[] args) {
   TreeIteratorTesting testing = new TreeIteratorTesting(bst, treeIterator);
 
   
-
+ System.out.println("Average: " + average);
+  System.out.println("Maximum Value: " + max);
   
     
 
