@@ -1,0 +1,7 @@
+public abstract BinarySearch Tree
+
+public abstract boolean add(int data);
+
+public int getSize() {return size;}
+
+
