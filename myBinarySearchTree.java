@@ -1,11 +1,11 @@
 
 public class myBinarySearchTree extends BinarySearchTree{
     private boolean addReturn;
+    
     public myBinarySearchTree() {
         size = 0;
     }
 
-    
     @Override
     public boolean add(int data) {
         root = add(root, data);
@@ -17,21 +17,19 @@ public class myBinarySearchTree extends BinarySearchTree{
             size++;
             return new Node(data);
         }
+        //if data is less than node data add to left
         if (data < node.data) {
             node.left = add(node.left, data);
             size++;
             addReturn = true;
         }
-        else if (data > node.data) {
+        //if data is greater than or equal to node data add to right
+        else if (data > node.data || data == node.data) {
             node.right = add(node.right, data);
             size++;
             addReturn = true;
         }
-        else if (data == node.data) {
-            node.right = add(node.right, data);
-            size++;
-            addReturn = true;
-        }
+        //nothing else to add so return false
         else {
             addReturn = false;
         }
