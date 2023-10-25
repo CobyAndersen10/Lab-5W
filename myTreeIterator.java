@@ -10,7 +10,7 @@ public class myTreeIterator implements ITreeIterator {
 	
 	/**
 	 * Returns an array representation of the given BinarySearchTree.
-	 * The array is sorted by in-order traverse.
+	 * @return An array representation of the BinarySearchTree.
 	 */
 	public int[] sequenceArray(BinarySearchTree bst) {
 		sequenceArray = new int[bst.getSize()];
